@@ -1,0 +1,60 @@
+.footer {
+    background: $color-footer;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 127px 16px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction:column;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        color: $color-black;
+        margin-bottom: 16px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }  
+
+    &__url {
+        text-decoration-color: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-black;
+    }   
+    
+    
+    &__copyright {
+        display: flex;
+        margin-top: 100px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-black;
+        max-width: 208px;
+    }
+}
