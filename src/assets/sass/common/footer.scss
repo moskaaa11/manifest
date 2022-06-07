@@ -6,11 +6,24 @@
         justify-content: space-around;
         align-items: center;
         padding: 127px 16px;
+
+        @media (max-width: $tab) {
+            padding: 64px auto;
+            display: block;
+        }
     }
 
     &__box {
         display: flex;
         flex-direction:column;
+
+        @media (max-width:$tab){
+            flex-direction:row;
+            flex-wrap: wrap;
+            display: block;
+            margin-bottom: 48px;
+        }
+        
     }
 
     &__title {
@@ -20,6 +33,15 @@
         letter-spacing: 0.05em;
         color: $color-black;
         margin-bottom: 32px;
+
+        @media (max-width:$tab) {
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            margin-bottom: 18px;
+        }
+
     }
 
     &__text {
@@ -29,6 +51,7 @@
         letter-spacing: 0.1em;
         color: $color-black;
         margin-bottom: 16px;
+
     }
 
     &__menu {
@@ -44,6 +67,7 @@
         line-height: 166%;
         letter-spacing: 0.1em;
         color: $color-black;
+
     }   
     
     
@@ -56,5 +80,6 @@
         letter-spacing: 0.1em;
         color: $color-black;
         max-width: 208px;
+
     }
 }
