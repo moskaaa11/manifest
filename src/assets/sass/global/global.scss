@@ -6,12 +6,14 @@ body {
     min-width: 135px;
     display: block;
     margin-right: 50px;
+    z-index: 10;
+    position: relative;
 }
 
 .container {
     max-width: 1179px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: $conteiner-size;
 }
 
 .title {
@@ -21,6 +23,11 @@ body {
     letter-spacing: 0.05em;
     color: $color-black;
     font-family: $sub-font;
+
+    @media (max-width: $tab) {
+        font-size: 33px;
+        line-height: 50px;
+    }
 }
 
 .sub-title {
@@ -38,4 +45,54 @@ body {
     line-height: 32px;
     letter-spacing: 0.05em;
     color: $color-text;
+
+    @media (max-width: $tab) {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+.h3 {
+    font-family: $sub-font;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $color-black;
+}
+
+.h4 {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $color-h5;
+}
+
+.h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: $color-h5;
+}
+
+.h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: $color-h6;
+}
+
+.h9 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: $color-h6;
+}
+
+.arrow {
+    width: 23px;
 }
