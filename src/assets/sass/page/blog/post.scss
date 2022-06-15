@@ -62,14 +62,50 @@
 }
 
 .description {
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+    }
 
     &__box {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+
+        &:first-child {
+            position: sticky;
+            flex-direction: column;
+            margin-top:124px; 
+            margin-left:90px;
+        }
+    }
+
+    &__photo {
+        max-width: 70px;
     }
 
     &__icon {
         width: 16px;
+        height: 18px;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $color-black;
+    }
+
+    &__text {
+        margin-top: 39px;
+        color: $color-black;
+        max-width: 736px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: inside;
     }
 }
