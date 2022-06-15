@@ -56,6 +56,7 @@
 
         @media (max-width: $tab) {
             max-height: 121px;
+            max-width: 288px;
             margin-bottom: 39px;
         }
     }
@@ -66,6 +67,7 @@
     &__container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 90px;
     }
 
@@ -76,6 +78,15 @@
             flex-direction: column;
             margin-top:124px; 
             margin-left:90px;
+
+            @media (max-width: $tab) {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                left: -70px;
+                top: 680px;
+            }
         }
     }
 
@@ -95,17 +106,83 @@
         align-items: center;
         gap: 8px;
         color: $color-black;
+
+        @media (max-width: $tab) {
+            margin-bottom: 91px;
+        }
+    }
+
+    &__abstract {
+        
+
+        &:nth-child(3) {
+            border-left: 3px solid #7b7b7b;
+        }
+        
     }
 
     &__text {
         margin-top: 39px;
         color: $color-black;
         max-width: 736px;
+
+        &-left {
+            max-width: 736px;
+            margin-left: 63px;
+
+            @media (max-width: $tab) {
+                margin-left: 16px;
+            }
+
+            &:first-child {
+                margin: 30px 63px;
+                color: $color-black;
+                max-width: 672px;
+
+                @media (max-width: $tab) {
+                    margin-left: 16px;
+                }
+            }
+
+        }
+
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        list-style: inside;
+        margin-top: 39px;
+        color: $color-black;
+        max-width: 736px;
+        margin-bottom: 66px;
+
+        &-item {
+            margin-bottom: 30px;
+            list-style: inside;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        color: $color-black;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 112px;
+
+        @media (max-width: $tab) {
+            color: $color-h6;
+            border-bottom: 2px solid gray;
+            align-items: baseline;
+            margin-bottom: 64px;
+        }
+
+            &-gray {
+                max-width: 418px;
+
+                @media (max-width: $tab) {
+                    justify-content: first baseline;
+                    color: $color-black;
+            }
+        }
     }
 }
