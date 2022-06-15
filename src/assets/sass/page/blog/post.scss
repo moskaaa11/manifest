@@ -1,6 +1,62 @@
 .info {
 
     &__box {
+        padding: 135px 0 64px 0;
+
+        @media (max-width: $tab) {
+            padding: 73px 0 39px 0;
+        }
+    }
+
+    &__category {
+        margin-bottom: 24px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 48px;
         max-width: 640px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 16px;
+            max-width: 288px;
+        }
+    }
+
+    &__text {
+
+        display: flex;
+        gap: 39px;
+        align-items: center;
+
+        &-img {
+            width: 16px;
+            height: 15px;
+        }
+
+        &-number {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (max-width: $tab) {
+            align-items:flex-start ;
+            flex-direction: column;
+            gap: 14px;
+        }
+    }
+
+    &__img{
+        max-height: 470px;
+        margin-bottom: 41px;
+
+        @media (max-width: $tab) {
+            max-height: 121px;
+            margin-bottom: 39px;
+        }
     }
 }

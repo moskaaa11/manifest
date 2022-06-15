@@ -96,3 +96,16 @@ body {
 .arrow {
     width: 23px;
 }
+
+.info__title {
+    font-family: $sub-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+
+    @media (max-width: $tab) {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}
