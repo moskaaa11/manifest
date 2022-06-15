@@ -109,3 +109,12 @@ body {
         line-height: 50px;
     }
 }
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: $color-h5;
+}

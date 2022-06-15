@@ -186,3 +186,18 @@
         }
     }
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    &__box {
+        display: flex;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+    }
+}
