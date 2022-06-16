@@ -53,6 +53,7 @@
     &__img{
         max-height: 470px;
         margin-bottom: 41px;
+        object-fit:fill;
 
         @media (max-width: $tab) {
             max-height: 121px;
