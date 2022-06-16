@@ -188,16 +188,68 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+
+    padding-left: 352px;
+    margin-bottom: 92px;
+
+    @media (max-width: $tab) {
+        padding-left: 16px;
+        max-width: 288px;
+        margin-bottom: 96px;
+    }
+
+    &__sub {
+        margin-bottom: 64px;
+    }
     
     &__box {
         display: flex;
 
+        @media (max-width: $tab) {
+            flex-direction: column;
+        }
+
         &-item {
             display: flex;
+            justify-content: center;
             flex-direction: column;
-            border: none;
         }
+
+        &:nth-child(2) {
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 49px;
+
+            @media (max-width: $tab) {
+                flex-direction: row;
+                margin-left: 0 auto;
+            }
+        }
+    }
+
+    &__label {
+        margin-bottom: 16px;
+    }
+
+    &__input {
+        border-bottom: 1px solid $color-black;
+        margin-right: 43px;
+        margin-bottom: 48px;
+        width:215px;
+    }
+
+    &__comment {
+        border-bottom: 1px solid $color-black;
+        margin-bottom: 24px;
+        width: 732px;
+
+        @media (max-width: $tab) {
+            width: 288px;
+        }
+    }
+
+    &__button {
+        width: 109px;
+        height: 45px;
     }
 }
