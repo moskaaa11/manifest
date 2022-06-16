@@ -1,5 +1,97 @@
 .blog {
+
+    .hero {
+        margin: 123px auto 96px auto;
+    }
+
     .categories {
+        
+        &__box {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:last-child {
+                margin: 50px auto 114px 608px;
+                max-width: 448px;
+
+                @media (max-width: $tab) {
+                    margin: 324px 16px 64px 16px;
+                    max-width: 288px;
+                }
+            }
+            
+            &-number {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 114px;
+                gap: 24px;
+                cursor: pointer;
+            }
+        }
+
+        &__img {
+            max-width: 540px ;
+            position: absolute;
+            max-height: 470px;
+
+            @media (max-width: $tab) {
+                max-width: 288px;
+                max-height: 250px;
+            }
+        }
+
+        &__sub{
+            margin-bottom: 24px;
+
+            &:last-child{
+                margin-bottom: 48px;
+            }
+
+            @media (max-width: $tab) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            margin-bottom: 94px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 64px;
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 259px;
+            left: 91px;
+
+            @media (max-width: $tab) {
+                top: 325px;
+                left: 155px;
+            }
+        }
+
+        &__menu {
+            max-height: 48px;
+            display: flex;
+            margin-bottom: 48px;
+        }
+
+        &__label {
+            margin-right:39px;
+            color: $color-black;
+        }
+
+        &__select {
+            color: $color-text;
+            width: 407px;
+        }
+
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr;
