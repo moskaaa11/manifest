@@ -10,13 +10,14 @@
             display: flex;
             flex-direction: column;
             position: relative;
+            z-index: 1;
 
             &:last-child {
                 margin: 50px auto 114px 608px;
                 max-width: 448px;
 
                 @media (max-width: $tab) {
-                    margin: 324px 16px 64px 16px;
+                    margin: 324px 16px 0 16px;
                     max-width: 288px;
                 }
             }
@@ -27,6 +28,10 @@
                 margin-bottom: 114px;
                 gap: 24px;
                 cursor: pointer;
+
+                @media (max-width: $tab) {
+                    margin-bottom: 64px;
+                }
             }
         }
 
@@ -80,17 +85,30 @@
             max-height: 48px;
             display: flex;
             margin-bottom: 48px;
+
+            @media (max-width: $tab) {
+                flex-direction: column;
+            }
         }
 
         &__label {
             margin-right:39px;
             color: $color-black;
+
+            @media (max-width: $tab) {
+                margin-bottom: 29px;
+            }
         }
 
         &__select {
             color: $color-text;
             width: 407px;
             border-bottom: 1px solid $color-black;
+
+            @media (max-width: $tab) {
+                width: 288px;
+                padding-bottom: 48px;
+            }
         }
 
         &__list {
