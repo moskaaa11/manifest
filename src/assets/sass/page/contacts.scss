@@ -13,12 +13,66 @@
         }
     }
 
-    .info {
+    .main {
+
+        display: flex;
+        flex-direction: row-reverse;
+        
+        &__container {
+            width: 542px;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__address {
+            max-width: 226px;
+            margin-bottom: 21px;
+        }
+
+        &__box {
+            display: flex;
+            margin-bottom: 22px;
+            align-items: center;
+            gap: 9px;
+
+            &:last-child {
+                margin-bottom: 69px;
+            }   
+        }
 
         &__img {
             width: 20px;
+            height: 20px;
             color: $color-text;
             mask-image: $color-text;
+        }
+
+        &__sub {
+            margin-bottom: 26px;
+        }
+
+        &__social {
+            display: flex;
+            gap: 24px;
+        }
+
+        &__icon {
+            width: 16px;
+            height: 18px;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
