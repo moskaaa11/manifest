@@ -20,5 +20,11 @@ a {
 }
 
 input {
-    border: 0px solid white;
+    border: 0;
 }
+
+select {
+    width: 100%;
+    padding:10px;
+    border: 1px solid white;
+  }
