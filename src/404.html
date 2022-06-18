@@ -8,13 +8,16 @@
     <title>404</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Red+Hat+Display&display=swap');
+
         .container {
             display: flex;
             justify-content:flex-start;
             align-items: center;
             flex-direction: column;
-            width: 100vw;
+            max-width: 1440px;
             height: 100vh;
+
         }
 
         .error-page__logo {
@@ -23,7 +26,7 @@
         }
 
         .error-page__title {
-            font-family: 'Red Hat Display';
+            font-family: 'Red Hat Display', sans-serif;
             font-weight: 500;
             font-size: 140px;
             line-height: 185px;
@@ -32,15 +35,44 @@
             margin-bottom: 8px;
         }
 
-        button {
+        .error-page__text {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: #565656;
+            max-width: 613px;
+            text-align: center;
+            margin-bottom: 41px;
+        }
+
+        .error-page__text-gray {
+            font-size: 33px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            color: #CCCCCC;
+        }
+
+        .button {
+            font-family: 'Lato', sans-serif;
             font-weight: 700;
             font-size: 16px;
             line-height: 166%;
             letter-spacing: 0.1em;
             color: #FFFFFF;
-            background: gray;
+            background: #565656;
             border: 0px solid white;
             cursor: pointer;
+            width: 176px;
+            height: 45px;
+            margin-bottom: 21px;
+        }
+
+        .error-page__icon {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 217px;
         }
     </style>
 
@@ -76,8 +108,19 @@
                     </svg>
                 </div>
                 <h1 class="error-page__title">404</h1>
-                <p class="error-page__text"></p>
-                <button>Go home</button>
+                <p class="error-page__text">
+                    <span class="error-page__text-gray">
+                        Oops!
+                    </span>
+                    we are sorry, but the page you requested
+                    was not found.
+                </p>
+                <button class="button">
+                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.387638 5.46967C0.0947457 5.76256 0.0947456 6.23744 0.387638 6.53033L5.16061 11.3033C5.4535 11.5962 5.92838 11.5962 6.22127 11.3033C6.51416 11.0104 6.51416 10.5355 6.22127 10.2426L1.97863 6L6.22127 1.75736C6.51416 1.46447 6.51416 0.989592 6.22127 0.696698C5.92838 0.403805 5.4535 0.403805 5.16061 0.696698L0.387638 5.46967ZM20.918 5.25L0.917969 5.25L0.917969 6.75L20.918 6.75L20.918 5.25Z" fill="white"/>
+                    </svg>
+                    Go home
+                </button>
                 <div class="error-page__socialmedia">
                     <div class="error-page__icon">
                         <a href="" class="error-page__icon-link">
