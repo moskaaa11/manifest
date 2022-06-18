@@ -1,0 +1,67 @@
+.about {
+    
+    &__container {
+        display: flex;
+        margin: 128px auto;
+        justify-content: space-between;
+
+        @media (max-width: $tab) {
+            flex-direction: column;
+            margin: 64px 16px;
+            max-width: 288px;
+        }
+    }
+
+    &__box {
+        max-width: 540px;
+
+        @media (max-width: $tab) {
+            max-width: 288px;
+        }
+        
+    }
+
+    &__title {
+        margin-bottom: 39px;
+
+        @media (max-width: $tab) {
+            margin-bottom: 48px;
+        }
+    }
+    
+    &__sub {
+        color: $color-h5;
+    }
+    
+    &__img {
+        margin-top: 19px;
+        max-width: 225px;
+
+        @media (max-width: $tab) {
+            margin-top: 24px;
+        }
+    }
+
+    &__text {
+        margin-top: 30px;
+    }
+
+    &__button {
+        margin-top: 67px;
+        width: 136px;
+        height: 45px;
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__arrow {
+        width: 19px;
+    }
+}

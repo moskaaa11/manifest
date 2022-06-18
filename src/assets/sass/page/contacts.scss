@@ -6,10 +6,20 @@
             margin: 125px auto;
             display: flex;
             justify-content: space-between;
+
+            @media (max-width: $tab) {
+                flex-direction: column;
+                max-width: 288px;
+                margin: 64px 16px;
+            }
         }
 
         &__text {
             max-width: 543px;
+
+            @media (max-width: $tab) {
+                margin-top: 42px;
+            }
         }
     }
 
@@ -17,6 +27,12 @@
 
         display: flex;
         flex-direction: row-reverse;
+
+        @media (max-width: $tab) {
+            flex-direction: column-reverse;
+            max-width: 288px;
+            margin: auto 16px;
+        }
         
         &__container {
             width: 542px;
@@ -24,11 +40,19 @@
 
         &__title {
             margin-bottom: 24px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 40px;
+            }
         }
 
         &__address {
             max-width: 226px;
             margin-bottom: 21px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 23px;
+            }
         }
 
         &__box {
@@ -39,6 +63,10 @@
 
             &:last-child {
                 margin-bottom: 69px;
+
+                @media (max-width: $tab) {
+                    margin-bottom: 51px;
+                }
             }   
         }
 
@@ -51,6 +79,10 @@
 
         &__sub {
             margin-bottom: 26px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 24px;
+            }
         }
 
         &__social {
@@ -63,16 +95,72 @@
             height: 18px;
             gap: 24px;
             margin-bottom: 24px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 64px;
+            }
         }
     }
     
-    .form {
+    .forma {
         display: flex;
         flex-direction: column;
 
         &__box {
             display: flex;
             flex-direction: column;
+        }
+
+        &__select {
+            font-family: $sub-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166.3%;
+            letter-spacing: 0.1em;
+            color: $color-h5;
+            margin-bottom: 49px;
+            text-align: left;
+            border-bottom: 1px solid $color-black;
+        }
+
+        &__label {
+            margin-bottom: 17px;
+        }
+
+        &__input {
+            border-bottom: 1px solid $color-black;
+            margin-bottom: 49px;
+
+            &:last-child {
+                margin-bottom: 64px;
+            }
+
+            @media (max-width: $tab) {
+                max-width: 288px;
+            }
+        }
+
+        &__button {
+            width: 136px;
+            height: 45px;
+            font-family: $main-font;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 124px;
+
+            @media (max-width: $tab) {
+                margin-bottom: 64px;
+            }
+        }
+
+        &__arrow {
+            width: 19px;
         }
     }
 }
